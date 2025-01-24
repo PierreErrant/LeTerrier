@@ -25,8 +25,8 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        characterController = GetComponent<CharacterController>();
-        mainCamera = Camera.main;
+       characterController = GetComponent<CharacterController>();
+       mainCamera = Camera.main;
     }
 
     private void Update()
@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
         ApplyRotation();
         ApplyGravity();
         ApplyMouvement();
+        UnityEngine.Debug.Log(transform.rotation);
     }
    
     private void ApplyRotation()
@@ -42,6 +43,7 @@ public class PlayerController : MonoBehaviour
         direction = Quaternion.Euler(0.0f, mainCamera.transform.eulerAngles.y, 0.0f) * new Vector3(input.x, 0.0f, input.y);
         var targetRotation = Quaternion.LookRotation(direction, Vector3.up);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+       // UnityEngine.Debug.Log(direction);
     }
     
     private void ApplyMouvement()

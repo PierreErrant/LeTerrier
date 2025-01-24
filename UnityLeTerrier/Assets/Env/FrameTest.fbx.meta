@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: de0685429cbc65845973abbd68d024f8
+guid: 8b6d62a07260ba745983a1f63075d24c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,10 +7,25 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 826b39da481dea2459f58995c49fba51, type: 2}
+      name: FrameBorder
+    second: {fileID: 2100000, guid: fd65532f1d7bb924593ced2d943a65e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 0459f5d25f546404ba660451043c0008, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Picon
+    second: {fileID: 2100000, guid: 66c950ea52f979a4489cb8de90ae68de, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Picon
+    second: {fileID: 2800000, guid: 29c42c80552704f4397fc894f6a266b5, type: 3}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1
