@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameplay.unity
     guid: 281f97665fa90ff418978909bf9f94c5
   - enabled: 1
-    path: Assets/Scenes/Week/Week_001.unity
+    path: Assets/Scenes/Week/Env.unity
     guid: 18a87ac181ae47d47baa2cf5b3f39662
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
