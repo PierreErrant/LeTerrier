@@ -8,7 +8,7 @@ public class SceneLoader : MonoBehaviour
     void Start()
     {
         LoadSceneList(scenesToLoad);
-        
+        Cursor.visible = false; 
     }
 
     // Update is called once per frame

@@ -131,7 +131,6 @@ GameObject:
   - component: {fileID: 283241231}
   - component: {fileID: 283241234}
   - component: {fileID: 283241233}
-  - component: {fileID: 283241235}
   m_Layer: 0
   m_Name: PlayerInput
   m_TagString: Untagged
@@ -246,7 +245,7 @@ MonoBehaviour:
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 283241235}
+      - m_Target: {fileID: 957669905}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: Pause
         m_Mode: 0
@@ -342,19 +341,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!114 &283241235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283241230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8cf5f31661adae4f9f7ccb6762401a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 1456927802}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,7 +882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8cf5f31661adae4f9f7ccb6762401a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 1456927802}
+  _pauseMenu: {fileID: 1456927802}
 --- !u!1 &1021259117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,8 +1226,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135373792}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000075387456, y: 0.982803, z: -0.18465683, w: 0.00040123626}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.000075385804, y: 0.982803, z: -0.18465683, w: 0.00040122747}
+  m_LocalPosition: {x: 0, y: 0.00000023841858, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1319,8 +1305,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147855873}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00006498327, y: 0.98725075, z: -0.15917242, w: 0.00040305217}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.00006498184, y: 0.98725075, z: -0.1591724, w: 0.00040304326}
+  m_LocalPosition: {x: 0, y: 0.00000023841858, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1699,7 +1685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 0.8352941}
+  m_Color: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 0.9843137}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1795,7 +1781,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558905437}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00008579712, y: 0.9776681, z: -0.2101546, w: 0.00039914}
+  m_LocalRotation: {x: 0.000085795225, y: 0.9776681, z: -0.21015461, w: 0.00039913118}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1998,7 +1984,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1801237421}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 957669905}
+        m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1801237421
 MonoBehaviour:
   m_ObjectHideFlags: 0
