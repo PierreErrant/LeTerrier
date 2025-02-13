@@ -31,6 +31,5 @@ namespace Player.Interaction
         public void readyToInteract() => _ToInteract.Invoke();
         
         public void notReadyInteract() => _NotInteract.Invoke();
-
     }
 }
